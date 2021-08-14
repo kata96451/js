@@ -3,9 +3,9 @@ function showNumber() {
     var i=0;
 
     while (i<3){
+        alert('number' + i + '!');
         i++;
-        alert('number' + i + '!')
-        console.log(i)
+        console.log(i);
     }
 }
 

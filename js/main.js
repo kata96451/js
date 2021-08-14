@@ -3,15 +3,16 @@ function showNumber() {
     var i=0;
 
     while (i<3){
-        alert('number' + i + '!')
+        alert('number' + i + '!');
         i++;
         console.log(i);
     }
 }
 
 function writeNumber() {
+    let x;
     do {
-        let x = prompt('Введите число больше 100',);
+        x = prompt('Введите число больше 100', );
         if (x == null) {
             break;
         }

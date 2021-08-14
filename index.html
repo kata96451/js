@@ -1,14 +1,58 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document_js</title>
-    <script src="js/main.js"></script>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <style>
+        .js--hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" onclick="hidText()"/>
+        <div id="text">Текст</div>
+    </div>
+    <div>
+        <input type="button" id="hider2" value="Нажмите, чтобы спрятать текст"/>
+        <div id="text2">Текст</div>
+    </div>
+    <div>
+        <input type="button" id="hider3" value="Нажмите, чтобы спрятать текст"/>
+        <div id="text3">Текст</div>
+    </div>
+    <input type="button" id="hidden-button" value="Нажмите, чтобы спрятать кнопку"/>
+
+    <script>
+    function hidText() {
+        const hiddenText = document.getElementById('text');
+        hiddenText.className = 'js--hidden';
+    }
+
+    document.getElementById('hider2').onclick = function () {
+        document.getElementById('text2').hidden = true;
+    }
+
+    const hid = document.getElementById('hider3');
+    hid.onclick = function hidText3() {
+        const hiddenText = document.getElementById('text3');
+        hiddenText.className = 'js--hidden';
+    }
+
+    // const butt = document.querySelector('#hidden-button');
+    //
+    // function hidButton() {
+    // butt.style.visibility = 'hidden';
+    // }
+    // butt.onclick = hidButton;
+
+    const butt = document.querySelector('#hidden-button');
+    butt.onclick = function (){
+        this.style.visibility= 'hidden'
+    }
+    </script>
 </body>
+
 </html>

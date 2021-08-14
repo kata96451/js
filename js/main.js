@@ -12,6 +12,9 @@ function showNumber() {
 function writeNumber() {
     do {
         let x = prompt('Введите число больше 100',);
+        if (x == null) {
+            break;
+        }
     } while (x <= 100  );
-    if (x = null) {break};
+
 }

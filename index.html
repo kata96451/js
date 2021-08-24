@@ -7,19 +7,26 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </head>
+<style>
+    .langs p{
+        display: none;
+    }
+    .langs p.first{
+        display: block;
+    }
+    .langs{
+        height: 35px;
+    }
+</style>
 <body>
-    <div>
-        <input type="button" id="hider" value="Нажмите, чтобы спрятать текст"/>
-        <div id="text">Текст</div>
-    </div>
-    <div>
-        <input type="button" id="shower" value="Нажмите, чтобы показать текст"/>
-    </div>
-    <div>
-        <input type="button" id="hider2" value="Нажмите, чтобы спрятать текст"/>
-        <div id="text2">Текст</div>
-    </div>
-
-    <input type="button" id="hidden-button" value="Нажмите, чтобы спрятать кнопку"/>
+<h3>Выбранный язык</h3>
+<div class="langs">
+    <p class="first">Java</p>
+    <p>C/C++</p>
+    <p>PHP</p>
+    <p class="last">JavaScript</p>
+</div>
+<button id="next">Вперед</button>
+<button id="prev">Назад</button>
 </body>
 </html>

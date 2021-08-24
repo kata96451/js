@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kata96451/js/issues"
   },
-  "homepage": "https://github.com/kata96451/js#readme"
+  "homepage": "https://github.com/kata96451/js#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
